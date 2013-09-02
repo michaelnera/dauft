@@ -11,4 +11,5 @@ Gem::Specification.new do |gem|
   gem.description   = ""
   gem.summary       = ""
   gem.homepage      = "https://github.com/michaelnera/dauft"
+  gem.files         = `git ls-files`.split($\)
 end
