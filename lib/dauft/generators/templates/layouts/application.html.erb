@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>App_Name</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <header class="row"></header>
+
+    <div id="container">
+      <%= yield %>
+    </div>
+
+    <footer class="row"></footer>
+  </body>
+
+</html>
