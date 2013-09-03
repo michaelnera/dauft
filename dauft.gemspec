@@ -12,4 +12,6 @@ Gem::Specification.new do |gem|
   gem.summary       = ""
   gem.homepage      = "https://github.com/michaelnera/dauft"
   gem.files         = `git ls-files`.split($\)
+
+  gem.add_dependency "sass", [">= 3.2.0"]
 end

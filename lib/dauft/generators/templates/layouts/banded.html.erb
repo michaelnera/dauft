@@ -2,30 +2,30 @@
 <html>
   <head>
     <title>App_Name</title>
-    <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
+    <%%= stylesheet_link_tag "application", :media => "all" %>
+    <%%= javascript_include_tag "application" %>
+    <%%= csrf_meta_tags %>
   </head>
 
   <body>
     <header class="row">
       <div class="large-3 columns">
-        <h1><%= image_tag "http://placehold.it/400x100&amp;text=Logo" %></h1>
+        <h1><%%= image_tag "http://placehold.it/400x100&amp;text=Logo" %></h1>
       </div>
 
       <div class="large-9 columns">
         <ul class="button-group right">
-          <% 1.upto(4) do |i| %>
+          <%% 1.upto(4) do |i| %>
             <li>
-              <%= link_to "Link #{i}", '#', :class => 'button' %>
+              <%%= link_to "Link #{i}", '#', :class => 'button' %>
             </li>
-          <% end %>
+          <%% end %>
         </ul>
       </div>
     </header>
 
     <div id="container">
-      <%= yield %>
+      <%%= yield %>
     </div>
 
     <footer class="row">
