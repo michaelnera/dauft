@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Dauft::VERSION
   gem.authors       = ["michaelnera"]
   gem.email         = ["kapitan_03@yahoo.com"]
-  gem.description   = ""
-  gem.summary       = ""
+  gem.description   = "Design Applications Using Foundation Templates"
+  gem.summary       = "This application uses Zurb Foundation stylesheets and html templates"
   gem.homepage      = "https://github.com/michaelnera/dauft"
   gem.files         = `git ls-files`.split($\)
 

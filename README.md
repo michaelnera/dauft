@@ -17,8 +17,19 @@ Or install it yourself as:
     $ gem install dauft
 
 ## Usage
+    To create a layout:
 
-    $ rails g dauft:layout
+    $ rails g dauft:layout template_name
+
+    To use this template for a controller, add this line to your controller:
+
+    layout 'template_name'
+
+
+    To create views that uses a template:
+
+    $ rails g dauft:view template_name controller_name action_1 action_2
+
 
 ## Contributing
 
