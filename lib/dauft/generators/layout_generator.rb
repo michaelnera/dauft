@@ -4,7 +4,7 @@ module Dauft
   module Generators
     class LayoutGenerator < Rails::Generators::Base
       source_root File.expand_path("../templates", __FILE__)
-      argument :layout_name, :type => :array, :default => 'application'
+      argument :layout_name, :type => :string, :default => 'application', :banner => 'layout_name'
 
 
       def generate_layout

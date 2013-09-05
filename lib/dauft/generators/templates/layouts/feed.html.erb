@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>App_Name</title>
+    <%%= stylesheet_link_tag "application", :media => "all" %>
+    <%%= javascript_include_tag "application" %>
+    <%%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+   <!-- Header and Nav -->
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <h1>Feed Template</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Header and Nav -->
+
+
+    <div class="row">
+
+
+
+   <!-- Nav Sidebar -->
+      <!-- This is source ordered to be pulled to the left on larger screens -->
+      <div class="large-3 columns ">
+        <div class="panel">
+          <a href="#"><img src="http://placehold.it/300x240&text=[img]" /></a>
+          <h5><a href="#">Your Name</a></h5>
+            <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+            <section class="section">
+              <h5 class="title"><a href="#">Section 1</a></h5>
+            </section>
+            <section class="section">
+              <h5 class="title"><a href="#">Section 2</a></h5>
+            </section>
+            <section class="section">
+              <h5 class="title"><a href="#">Section 3</a></h5>
+            </section>
+            <section class="section">
+              <h5 class="title"><a href="#">Section 4</a></h5>
+            </section>
+            <section class="section">
+              <h5 class="title"><a href="#">Section 5</a></h5>
+            </section>
+            <section class="section">
+              <h5 class="title"><a href="#">Section 6</a></h5>
+            </section>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Main Feed -->
+      <%%= yield %>
+
+      <!-- Right Sidebar -->
+      <!-- On small devices this column is hidden -->
+      <aside class="large-3 columns hide-for-small">
+        <p><img src="http://placehold.it/300x440&text=[ad]" /></p>
+        <p><img src="http://placehold.it/300x440&text=[ad]" /></p>
+      </aside>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr />
+        <div class="row">
+          <div class="large-5 columns">
+            <p>&copy; Copyright no one at all. Go to town.</p>
+          </div>
+          <div class="large-7 columns">
+            <ul class="inline-list right">
+              <li><a href="#">Section 1</a></li>
+              <li><a href="#">Section 2</a></li>
+              <li><a href="#">Section 3</a></li>
+              <li><a href="#">Section 4</a></li>
+              <li><a href="#">Section 5</a></li>
+              <li><a href="#">Section 6</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
