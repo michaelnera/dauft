@@ -11,12 +11,12 @@
 
 ## Installation
 
-First, add zurb-foundation gem. Add this to your Gemfile under assets group:
+First, add this to your Gemfile:
 
     gem 'zurb-foundation'
 
 
-Then, add this line under development group:
+Then, add this again to your Gemfile under development group:
 
     gem 'dauft'
 
