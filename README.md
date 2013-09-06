@@ -1,12 +1,12 @@
 # DAUFT
 
-    **Design Applications Using Foundation Templates**
+  **Design Applications Using Foundation Templates**
 
-    This gem uses [Zurb Foundation](http://foundation.zurb.com/templates.php) HTML templates.
+  This gem uses [Zurb Foundation](http://foundation.zurb.com/templates.php) HTML templates.
 
-    This gem requires you to install **zurb-foundation** gem.
+  This gem requires you to install [zurb-foundation](https://github.com/zurb/foundation) gem.
 
-    For the current version, these are the available templates: Banded, Blog, Feed, Grid, and Store
+  For the current version, these are the available templates: Banded, Blog, Feed, Grid, and Store
 
 
 ## Installation
@@ -27,18 +27,35 @@ And then execute:
 
 ## Usage
 
+First, setup zurb-foundation:
+    
+    $ rails g foundation:install
+
+
+Templates:
+    
+    Banded, Blog, Feed, Grid, and Store
+
+
 To create a layout:
 
     $ rails g dauft:layout template_name
+    
+    $ rails g dauft:layout store
 
-    To use this template for a controller, add this line to your controller:
+
+To use this template for a controller, add this line to your controller:
 
     layout 'template_name'
 
+    layout 'store'
 
-    To create views that uses a template:
+
+To create views that uses a template:
 
     $ rails g dauft:view template_name controller_name action_1 action_2
+
+    $ rails g dauft:view store products index
 
 
 ## Contributing
