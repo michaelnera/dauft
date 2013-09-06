@@ -9,9 +9,9 @@ Gem::Specification.new do |gem|
   gem.authors       = ["michaelnera"]
   gem.email         = ["kapitan_03@yahoo.com"]
   gem.description   = "Design Applications Using Foundation Templates"
-  gem.summary       = "This application uses Zurb Foundation stylesheets and html templates"
+  gem.summary       = "This gem uses Zurb Foundation stylesheets and html templates"
   gem.homepage      = "https://github.com/michaelnera/dauft"
   gem.files         = `git ls-files`.split($\)
 
-  gem.add_dependency "sass", [">= 3.2.0"]
+  gem.add_dependency "zurb-foundation"
 end
